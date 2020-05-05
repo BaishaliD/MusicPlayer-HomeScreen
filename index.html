@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/198cd6dc1b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- .........................................................NAV BAR............................................................. -->
+	<header>
+		<nav>
+			<div class="nav-left">
+				<div class="logo">
+					<div class="thumbnail-xxs-square image-round">
+					<img src="static/logo.jpg">
+				</div>
+				</div>
+				<div class="nav-menu">
+					<div class="nav-menu-item pointer">Home</div>
+					<div class="nav-menu-item pointer">Favourites</div>
+					<div class="nav-menu-item pointer">Playlists</div>			
+				</div>	
+			
+
+			<div class="nav-hamburger nav-menu-item pointer">
+						<input type="checkbox" id="cb-nav">
+						<label class="tab-title pointer" for="cb-nav">
+							<i class="fas fa-bars"></i>
+						</label>
+						<div class="hb-dropdown">
+							<!-- <div class="dropdown-text pointer"> -->
+								<div class="dropdown-text-item">Home</div>
+								<div class="dropdown-text-item">Favourites</div>
+								<div class="dropdown-text-item">Playlists</div>
+							<!-- </div> -->
+						</div>
+					</div>
+			</div>
+
+			<div class="nav-right">
+				<div class="notification">
+					<input type="checkbox" id="notif">
+					<label class="bell-icon pointer" for="notif">
+						<i class="fas fa-bell"></i>
+					</label>
+					<div class="notif-box">
+						<div class="content-title">
+							<h2>Notifications</h2>
+						</div>
+						<hr>
+						<div class="notif-item">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<hr>
+						<hr>
+						<div class="notif-item">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<hr>
+						<hr>					
+					</div>
+				</div>
+				<input type="checkbox" id="right-menu">		
+				<label for="right-menu">		
+					<div class="thumbnail-xxs-square image-round pointer">
+						<img src="static/baishali-profile-image.png">
+					</div>
+				</label>
+				<div class="side-menu">
+					<div class="side-menu-item" style="text-transform: none;">
+						<b>Baishali Datta</b>					
+					</div>
+					<hr>
+					<div class="side-menu-item">my profile</div>
+					<hr>
+					<div class="side-menu-item">General settings</div>
+					<hr>
+					<div class="side-menu-item">Playback settings</div>
+					<hr>
+					<div class="side-menu-item">Display settings</div>
+					<hr>
+					<div class="side-menu-item">Notification settings</div>
+					<hr>
+					<div class="side-menu-item">Help</div>
+					<hr>
+					<div class="side-menu-item">Log out</div>
+				</div>
+			</div>
+		</nav>
+		<div class="top-padding">
+			
+		</div>
+	</header>
+
+<!-- ............................................................................................................................................. -->
+
+
+	<main class="homepage">
+
+<!-- .........................................................MAIN SECTION............................................................. -->
+		<div id="main-container">
+			<div class="content">
+				<div class="carousel">
+		
+					<div class="carousel-container img1">
+						<img src="static/billboard-top.jpg" alt="">
+					</div>
+				
+					<div class="carousel-container img2">
+						<img src="static/80rock.jpg" alt="">
+					</div>
+				
+					<div class="carousel-container img3">
+						<img src="static/bollywood-party.jpg" alt="">
+					</div>
+			
+				</div>
+			</div>
+
+			<div class="content" id="latest-releases">
+				<div class="content-title">
+					<h2>Latest Releases</h2>
+				</div>
+				<div class="content-item flex-wrap">
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square">
+							<img src="static/selena-gomez-album.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								She
+							</div>
+							<div class="subtitle">
+								Selena Gomez
+							</div>
+						</div>
+						<div class="action">
+							<div class="menu">
+								<input type="checkbox" id="checkbox2">
+								<label class="tab-title pointer" for="checkbox2">
+									<i class="fas fa-ellipsis-h"></i>
+								</label>
+								<div class="dropdown">
+									<div class="dropdown-text pointer">
+										Play
+										<hr>
+										Add to queue
+										<hr>
+										Add to favourites	
+									</div>
+								</div>
+							</div>
+							<div class="time">4:02</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square">
+							<img src="static/prateek-kuhad.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Dil beparvah
+							</div>
+							<div class="subtitle">
+								Prateek Kuhad
+							</div>
+						</div>
+						<div class="action">
+							<div class="menu">
+								<input type="checkbox" id="checkbox3">
+								<label class="tab-title pointer" for="checkbox3">
+									<i class="fas fa-ellipsis-h"></i>
+								</label>
+								<div class="dropdown">
+									<div class="dropdown-text pointer">
+										Play
+										<hr>
+										Add to queue
+										<hr>
+										Add to favourites
+									</div>
+								</div>
+							</div>
+							<div class="time">5:01</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square">
+							<img src="static/kodaline-brother.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Brother
+							</div>
+							<div class="subtitle">
+								Kodaline
+							</div>
+						</div>
+						<div class="action">
+							<div class="menu">
+								<input type="checkbox" id="checkbox4">
+								<label class="tab-title pointer" for="checkbox4">
+									<i class="fas fa-ellipsis-h"></i>
+								</label>
+								<div class="dropdown">
+									<div class="dropdown-text pointer">
+										Play
+										<hr>
+										Add to queue
+										<hr>
+										Add to favourites
+									</div>
+								</div>
+							</div>
+							<div class="time">4:44</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square">
+							<img src="static/ritviz.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Jeet
+							</div>
+							<div class="subtitle">
+								Ritviz
+							</div>
+						</div>
+						<div class="action">
+							<div class="menu">
+								<input type="checkbox" id="checkbox1">
+								<label class="tab-title pointer" for="checkbox1">
+									<i class="fas fa-ellipsis-h"></i>
+								</label>
+								<div class="dropdown">
+									<div class="dropdown-text pointer">
+										Play
+										<hr>
+										Add to queue
+										<hr>
+										Add to favourites										
+									</div>
+								</div>
+							</div>
+							<div class="time">3:37</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+
+			<div class="content" id="made-for-you">
+				<div class="content-title">
+					<h2>Made for you</h2>
+				</div>
+				<div class="content-item">
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-large-square image-hover-styles pointer">
+							<img src="static/phosphorescent.jpg">
+							<div class="play">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Favourites
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-large-square image-hover-styles pointer">
+							<img src="static/lorde.png">
+							<div class="play">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-center">
+							<div class="title">
+								On loop
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-large-square image-hover-styles pointer">
+							<img src="static/unplugged.jpg">
+							<div class="play">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Daily mix 1
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-large-square image-hover-styles pointer">
+							<img src="static/indie-rock.jpg">
+							<div class="play">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Daily mix 2
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content" id="popular-artists">
+				<div class="content-title">
+					<h2>Popular Artists</h2>
+				</div>
+				<div class="content-item">
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles image-round pointer">
+							<img src="static/ed-sheeran.jpg">
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Ed Sheeran
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles image-round pointer">
+							<img src="static/billie-eilish.jpg">
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Billie Eilish
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles image-round pointer">
+							<img src="static/drake.jpg">
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Drake
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles image-round pointer">
+							<img src="static/ariana-grande.jpg">
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Ariana Grande
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles image-round pointer">
+							<img src="static/bruno-mars.jpg">
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Bruno Mars
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles image-round pointer">
+							<img src="static/cardi-b.jpg">
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Cardi-B
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content" id="genre">
+				<div class="content-title">
+					<h2>Genre</h2>
+				</div>
+				<div class="content-item">
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-rectangle transluscent zoom-in pointer">
+							<img src="static/rock-rect.jpg">
+							<div class="play">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Rock
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-rectangle transluscent zoom-in pointer">
+							<img src="static/country-rect.jpg">
+							<div class="play">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-center">
+							<div class="title">
+								Country
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-rectangle transluscent zoom-in pointer">
+							<img src="static/edm-rect.jpg">
+							<div class="play">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-center">
+							<div class="title">
+								EDM
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content" id="English Hits">
+				<div class="content-title">
+					<h2>English Hits</h2>
+				</div>
+				<div class="content-item">
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/billie-eilish.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Ophelia
+							</div>
+							<div class="subtitle">
+								The Lumineers
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/phosphorescent.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Ophelia
+							</div>
+							<div class="subtitle">
+								The Lumineers
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/lumineers.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Ophelia
+							</div>
+							<div class="subtitle">
+								The Lumineers
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/lorde.png">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Ophelia
+							</div>
+							<div class="subtitle">
+								The Lumineers
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/kodaline-love-like-this.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Ophelia
+							</div>
+							<div class="subtitle">
+								The Lumineers
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/cardi-b.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Ophelia
+							</div>
+							<div class="subtitle">
+								The Lumineers
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content" id="Hindi Hits">
+				<div class="content-title">
+					<h2>Hindi Hits</h2>
+				</div>
+				<div class="content-item">
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/ritviz.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Udd Gaye
+							</div>
+							<div class="subtitle">
+								Ritviz
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/local-train.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Udd Gaye
+							</div>
+							<div class="subtitle">
+								Ritviz
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/tune-kaha.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Udd Gaye
+							</div>
+							<div class="subtitle">
+								Ritviz
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/ritviz.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Udd Gaye
+							</div>
+							<div class="subtitle">
+								Ritviz
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/tune-kaha.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Udd Gaye
+							</div>
+							<div class="subtitle">
+								Ritviz
+							</div>
+						</div>
+					</div>
+					<div class="thumbnail-description-container">
+						<div class="thumbnail-square image-hover-styles pointer">
+							<img src="static/unplugged.jpg">
+							<div class="play pointer">
+								<a href="#">
+									<i class="fas fa-play-circle"></i>
+								</a>
+							</div>
+						</div>
+						<div class="description-left">
+							<div class="title">
+								Udd Gaye
+							</div>
+							<div class="subtitle">
+								Ritviz
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+<!-- .........................................................ASIDE SECTION............................................................. -->
+		
+		<div id="aside-container">
+
+			<div class="content-title">
+					<h2>Now playing</h2>
+			</div>
+			<div class="up-next releases">
+				<div class="releases-item">
+					<div class="thumbnail-xs-square pointer">
+						<img src="static/kodaline-love-like-this.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Ophelia
+						</div>
+						<div class="subtitle">
+							The Lumineers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<input type="checkbox" id="cb-q0">
+						<label class="tab-title pointer" for="cb-q0">
+							<i class="fas fa-angle-down"></i>
+						</label>
+						<div class="dropdown">
+							<div class="dropdown-text pointer">
+								Pause
+								<hr>
+								Remove
+								<hr>
+								Add to favourites							
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+			<div class="content-title">
+					<h2>Up next</h2>
+			</div>
+			<div class="up-next releases">
+				<div class="releases-item">
+					<div class="thumbnail-xs-square pointer">
+						<img src="static/billie-eilish.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Ophelia
+						</div>
+						<div class="subtitle">
+							The Lumineers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<input type="checkbox" id="cb-q1">
+						<label class="tab-title pointer" for="cb-q1">
+							<i class="fas fa-angle-down"></i>
+						</label>
+						<div class="dropdown">
+							<div class="dropdown-text pointer">
+								Play
+								<hr>
+								Remove
+								<hr>
+								Add to favourites							
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="releases-item">
+					<div class="thumbnail-xs-square pointer">
+						<img src="static/unplugged.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Ophelia
+						</div>
+						<div class="subtitle">
+							The Lumineers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<input type="checkbox" id="cb-q2">
+						<label class="tab-title pointer" for="cb-q2">
+							<i class="fas fa-angle-down"></i>
+						</label>
+						<div class="dropdown">
+							<div class="dropdown-text pointer">
+								Play
+								<hr>
+								Remove
+								<hr>
+								Add to favourites							
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="releases-item">
+					<div class="thumbnail-xs-square pointer">
+						<img src="static/lorde.png">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Ophelia
+						</div>
+						<div class="subtitle">
+							The Lumineers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<input type="checkbox" id="cb-q3">
+						<label class="tab-title pointer" for="cb-q3">
+							<i class="fas fa-angle-down"></i>
+						</label>
+						<div class="dropdown">
+							<div class="dropdown-text pointer">
+								Play
+								<hr>
+								Remove
+								<hr>
+								Add to favourites							
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="releases-item">
+					<div class="thumbnail-xs-square pointer">
+						<img src="static/kodaline-one-day.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Ophelia
+						</div>
+						<div class="subtitle">
+							The Lumineers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<input type="checkbox" id="cb-q4">
+						<label class="tab-title pointer" for="cb-q4">
+							<i class="fas fa-angle-down"></i>
+						</label>
+						<div class="dropdown">
+							<div class="dropdown-text pointer">
+								Play
+								<hr>
+								Remove
+								<hr>
+								Add to favourites							
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="releases-item">
+					<div class="thumbnail-xs-square pointer">
+						<img src="static/local-train.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Ophelia
+						</div>
+						<div class="subtitle">
+							The Lumineers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<input type="checkbox" id="cb-q5">
+						<label class="tab-title pointer" for="cb-q5">
+							<i class="fas fa-angle-down"></i>
+						</label>
+						<div class="dropdown">
+							<div class="dropdown-text pointer">
+								Play
+								<hr>
+								Remove
+								<hr>
+								Add to favourites							
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="releases-item">
+					<div class="thumbnail-xs-square pointer">
+						<img src="static/tune-kaha.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Ophelia
+						</div>
+						<div class="subtitle">
+							The Lumineers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<input type="checkbox" id="cb-q6">
+						<label class="tab-title pointer" for="cb-q6">
+							<i class="fas fa-angle-down"></i>
+						</label>
+						<div class="dropdown">
+							<div class="dropdown-text pointer">
+								Play
+								<hr>
+								Remove
+								<hr>
+								Add to favourites							
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="releases-item">
+					<div class="thumbnail-xs-square pointer">
+						<img src="static/cardi-b.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Ophelia
+						</div>
+						<div class="subtitle">
+							The Lumineers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<input type="checkbox" id="cb-q7">
+						<label class="tab-title pointer" for="cb-q7">
+							<i class="fas fa-angle-down"></i>
+						</label>
+						<div class="dropdown">
+							<div class="dropdown-text pointer">
+								Play
+								<hr>
+								Remove
+								<hr>
+								Add to favourites							
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+
+
+
+
+
+
+
+
+
+
+			
+		</div>
+	</main>
+
+<!-- .........................................................FOOTER BAR............................................................. -->
+
+	<footer>
+
+
+		<div class="song-description">
+			<div class="thumbnail-xs-square">
+				<img src="static/kodaline-love-like-this.jpg">							
+			</div>
+			<div class="description-left">
+				<div class="title">
+					All I want
+				</div>
+				<div class="subtitle">
+					Kodaline							
+				</div>
+			</div>
+		</div>
+		<div class="play-btn pointer">
+			<i class="far pb fa-play-circle"></i>
+		</div>
+		<div class="progress-panel">
+			<div class="buttons">
+				<div class="button pointer">
+					<i class="fas fa-random"></i>
+				</div>
+				<div class="button pointer">
+					<i class="fas fa-step-backward"></i>
+				</div>
+				<div class="button pointer">
+					<i class="far fa-play-circle"></i>
+				</div>
+				<div class="button pointer">
+					<i class="fas fa-step-forward"></i>
+				</div>
+				<div class="button pointer">
+					<i class="fas fa-random"></i>
+				</div>
+			</div>
+			<div class="time-and-progress">
+				<div class="time">
+					1:29
+				</div>
+				<div class="progress-bar pointer">
+					<div class="progress"></div>
+					<div class="progress-pointer"></div>
+				</div>
+				<div class="time">
+					4:05
+				</div>
+			</div>
+		</div>
+		<div class="like-icon footer-icon pointer"><i class="far fa-thumbs-up"></i></div>
+		<div class="download-icon footer-icon pointer"><i class="fas fa-volume-up"></i></div>
+		<div class="footer-menu footer-icon pointer"><i class="fas fa-bars"></i></div>
+	</footer>
+
+</body>
+</html>
